@@ -1,8 +1,11 @@
 """
 Setup v0.1 programme qui affiche le setup de la machine python
 Changelog:
-    - dec 17 qkmdsqklmdsq
-    - Je suis un petit champignon
+    - example changelog 12/18/2019
+    - second line
+    - Corrected stupid stuff written in changelog
+    - This actually is stupid stuff
+    - I should just stop now
 """
 
 import sys
@@ -16,9 +19,6 @@ def printseparator():
     """
     print('-' * 50)
 
-
-a = "dlqjdsl"
-print(a)  # J'affiche l'objet
 
 print(sys.executable)
 print(sys.platform)
