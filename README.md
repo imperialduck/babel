@@ -1,7 +1,7 @@
 # BABEL
 
 ### What is this project ?
-**This is a simple student project, bound to have many flaws, and created for learning purposes.**
+This is a simple student project, bound to have many flaws, and created for learning purposes.
 
 ## setup.py file
 
