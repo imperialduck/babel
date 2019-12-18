@@ -3,13 +3,16 @@
 import datetime
 
 
-def is_int(number):
+def is_int(n):
     """
-    Check if a given string can be converted to a number
+    {
+        n: Any
+    }
+    Check if a given string can be converted to an INT
     """
     a = False
     try:
-        int(number)
+        int(n)
     except:
         pass
     else:
@@ -17,9 +20,11 @@ def is_int(number):
     return a
 
 
-def check_age(year):
+def check_age(year):  # year: INT
     """
-    Takes in an INT as year
+    {
+        year: INT
+    }
     If the two digits date entered is 20 years old and not in the future, place it in the 1900's
     Else, place it in the 2000's
     """
@@ -30,26 +35,16 @@ def check_age(year):
         return year + 2000
 
 
-def strip_zeros(two_dig_date):
-    """
-    Strips every zero beginning a two digits date
-    """
-    two_dig_date = two_dig_date[1]  # Strip the 0 at the beginning any two digits date so it can be converted to int
-    return two_dig_date
-
-
 def controller_input():
     """
-    While the input is deemed invalid,
-    it will be set back to empty
-    And the function will loop
+    While the input is deemed invalid, it will be set back to empty allowing the function to loop
     """
     user_input = ''
     while user_input == '':
         user_input = input("Entrez votre année de naissance (format yy ou yyyy)")
         input_len = len(user_input)
-        if user_input[0] == "0":
-            user_input = strip_zeros(user_input)
+        if user_input[0] == "0" and input_len >= 2:
+            user_input = user_input[1]
 
         if is_int(user_input):
             user_input = int(user_input)
