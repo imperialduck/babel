@@ -44,7 +44,7 @@ def controller_input():
         user_input = input("Entrez votre année de naissance (format yy ou yyyy)")
         input_len = len(user_input)
         if user_input[0] == "0" and input_len >= 2:
-            user_input = user_input[1]
+            user_input = user_input[1]  # Strip the 0 at the beginning of the string as it will prevent any conversion to INT and crash the program
 
         if is_int(user_input):
             user_input = int(user_input)
