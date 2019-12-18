@@ -25,7 +25,7 @@ def check_age(year):
     {
         year: INT
     }
-    If the two digits date entered is 20 years old and not in the future, place it in the 1900's
+    If the two digits date entered is at most 20 years old and not in the future, place it in the 1900's
     Else, place it in the 2000's
     """
     date = datetime.datetime.now()
