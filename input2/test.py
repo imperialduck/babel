@@ -1,11 +1,17 @@
 import year
+import unittest
 
 
-t_year = year.validate_year("1987")
-print(t_year, type(t_year))  # expected output: 1987, <class 'int'>
+class YearTest(unittest.TestCase):
+    """
+    Tests for year.py
+    """
+    def test_year(self):
+        """Test that input_year is INT"""
+        self.assertEqual(type(year.validate_year(1987)), int)
+        self.assertEqual(type(year.validate_year("1987")), int)
+        self.assertNotEqual(type(year.validate_year("lxlw<kjx")), int)
 
-t_year = year.validate_year(1987)
-print(t_year, type(t_year))  # expected output: 1987, <class 'int'>
 
-t_year = year.validate_year("qdkldsjq")
-print(t_year, type(t_year))  # expected output: None, <class 'NoneType'>
+if __name__ == "__main__":
+    unittest.main()
