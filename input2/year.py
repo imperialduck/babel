@@ -3,21 +3,21 @@
 import datetime
 
 
-def is_int(n):
+def validate_year(year):
     """
     {
-        n: Any
+        year: STRING
     }
-    Check if a given string can be converted to an INT
+    Validates that a string is convertible to INT and converts it
     """
-    a = False
     try:
-        int(n)
-    except:
-        pass
+        int(year)
+    except Exception:
+        year = None
+        return year
     else:
-        a = True
-    return a
+        year = int(year)
+        return year
 
 
 def check_age(year):
@@ -46,8 +46,8 @@ def controller_input():
         if user_input[0] == "0" and input_len >= 2:
             user_input = user_input[1]  # Strip the 0 at the beginning of the string as it will prevent any conversion to INT and crash the program
 
-        if is_int(user_input):
-            user_input = int(user_input)
+        user_input = validate_year(user_input)
+        if user_input:
             if input_len == 2:
                 user_input = check_age(user_input)
                 return user_input
