@@ -20,7 +20,7 @@ def is_int(n):
     return a
 
 
-def check_age(year):  # year: INT
+def check_age(year):
     """
     {
         year: INT
