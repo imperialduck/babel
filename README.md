@@ -17,7 +17,12 @@ This file contains code to ask the user to enter his name
 
 Most of our code is listed here :
 - The validate_display function is kinda deprecated, but it takes in the user input and breaks it down in First name, middle name and last name before displaying it
-- The validate function makes sure the name is comprised only of 3 names (first, middle, last) and does not contain digits or special characters
+- The validate function makes sure the name is comprised only of 3 names (first, middle, last) and does not contain digits or special characters  
+it takes in a string and returns a boolean
+```
+if (validate("John Doe")):
+    ...
+```
 - The manage input function is here for testing purposes and does as much as what the input.py file does
 
 ## third.py
