@@ -22,7 +22,7 @@ Most of our code is listed here :
 - The validate_display function is kinda deprecated, but it takes in the user input and breaks it down in First name, middle name and last name before displaying it
 - The validate function makes sure the name is comprised only of 3 names (first, middle, last) and does not contain digits or special characters  
 it takes in a string and returns a boolean
-```
+```python
 if (validate("John Doe")):
     ...
 ```
