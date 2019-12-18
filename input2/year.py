@@ -10,6 +10,8 @@ def validate_year(year):
     {
         year: STRING
     }
+    --- HANDLING STRING CONVERSION TO INT ---
+
     Validates that a string is convertible to INT and converts it
     Then, checks if year is 2 digits and converts it to a 4 digits date if its not in the future
     """
@@ -35,6 +37,8 @@ def check_age(year):
     {
         year: INT
     }
+    --- HANDLES 2 DIGITS DATES TO CONVERT THEM TO 4 DIGITS ---
+
     If the two digits date entered is at most 20 years old and not in the future, place it in the 1900's
     Else, place it in the 2000's
     """
@@ -46,6 +50,8 @@ def check_age(year):
 
 def controller_input():
     """
+    ---HANDLES THE USER'S INPUTS---
+    
     While the input is deemed invalid, it will be set back to empty allowing the function to loop
     """
     user_input = ''
