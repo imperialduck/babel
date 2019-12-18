@@ -41,3 +41,8 @@ Testing file to write unit tests
 This file contains everything you need to manage the birth year the user enters.
 The year can be in the `yyyy` or the `yy` format.
 It will check its date is comprised only of numbers, and place it accordingly in the 1900's or the 2000's if he enters a 2 digit year.
+
+### test.py
+
+This file only contains unit tests  
+Expected outputs are written as comments (for now)
