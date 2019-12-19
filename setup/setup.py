@@ -35,4 +35,4 @@ print("Environment PythonPath : " + os.getenv("PYTHONPATH", "Vide"))
 print(datetime)
 print(datetime.__file__)
 
-dt = datetime.now()
+dt = datetime.datetime.now()
