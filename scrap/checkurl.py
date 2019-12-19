@@ -36,8 +36,8 @@ if __name__ == "__main__":
     for item in listedesurls:
         print(item)
     listedesurls = [
-        "http://localhost:8080/formext/avions/avions",
-        "https://www.dealabs.com/nouveaux",
+        "http://www.legorafi.fr",
+        "https://www.twitch.tv/",
         "https://github.com/Bebounet/babel-bebounet/blob/develop-bebounet/.gitignore",
     ]
     get_urls(listedesurls)
