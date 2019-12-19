@@ -1,16 +1,8 @@
 from pip._vendor import requests
-# html = requests.get("https://www.liberation.fr/")
-# print("Statut :", html.status_code)
-# print("Headers :", html.headers)
-# print("Text :", html.text)
-# html = requests.get("http://localhost:8080/formext/avions/avions")
-# print("Statut :", html.status_code)
-# print("Headers :", html.headers)
-# print("Text :", html.text)
 
 
 def get(url):
-    user_agent_text = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36"
+    user_agent_text = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0"
     headerdict = {"User-Agent": user_agent_text}
     html = requests.get(url, headers=headerdict)
     html.raise_for_status()
