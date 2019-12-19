@@ -1,0 +1,20 @@
+[
+  {
+    "url": "http://www.jeuxvideo.com/",
+    "status_code": 200,
+    "content": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<title>JEUXVIDEO.COM - Le m\u00e9dia de r\u00e9f\u00e9rence des gamers : Jeux vid\u00e9o sur PC et Consoles</title>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" id=\"meta-viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n<meta content='#004365' name='theme-color' />\n    <meta name=\"keywords\" content=\"\" />\n    <meta name=\"description\" content=\"Jeuxvideo.com est le premier site d&#039;information sur l&#039;actualit\u00e9 du jeu vid\u00e9o. Vous voulez suivre les news, les tests, les aper\u00e7us des jeux de vos consoles favorites (PC, playstation 3 et playstation 4, xbox 360 et xbox one, Nintendo Wii U et 3DS, PSP VITA, et sur smartphone iPhone ou Android) ? Vous...\" />\n            <meta name=\"robots\" content=\"index, follow, max-snippet:-1\" />\n                        <meta name=\"apple-itunes-app\" content=\"app-id=393077232\" />\n    <meta name=\"google-site-verification",
+    "title": "JEUXVIDEO.COM - Le m\u00e9dia de r\u00e9f\u00e9rence des gamers : Jeux vid\u00e9o sur PC et Consoles"
+  },
+  {
+    "url": "https://www.dealabs.com/",
+    "status_code": 200,
+    "content": "\n<!DOCTYPE html><html class=\"height--all-full no-js\" lang=\"fr\" data-page=\"index\"><head><meta charset=\"utf-8\" /><link rel=\"dns-prefetch\" href=\"//www.google-analytics.com/\"><link rel=\"dns-prefetch\" href=\"//stats.g.doubleclick.net/\"><meta name=\"theme-color\" content=\"#35373B\"><meta name=\"globalsign-domain-verification\" content=\"WhAiI_Ad6wV9FINxA61MSfBwnwGD3M7DJumlMnBQTp\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no\"/><meta name=\"google-site-verification\" content=\"\" /><meta property=\"fb:app_id\" content=\"\" /><meta name=\"apple-itunes-app\" content=\"app-id=914813032\" /><meta name=\"google-play-app\" content=\"app-id=com.dealabs.apps.android\"><meta property=\"og:title\" content=\"Dealabs.com \u2013 Tous les deals, bons plans, r\u00e9ducs et codes promo\"><meta property=\"og:description\" content=\"lll\u27a4 Bons plans et codes promo \u2665 Tous les deals et codes de r\u00e9duction de la communaut\u00e9 - D\u00e9nichez les meilleurs prix et \u00e9conomisez \u27a4 Dealabs.com.\"><meta propert",
+    "title": "Dealabs.com \u2013 Tous les deals, bons plans, r\u00e9ducs et codes promo"
+  },
+  {
+    "url": "https://www.ouest-france.fr/",
+    "status_code": 200,
+    "content": "<!doctype html>\n<html prefix=\"og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#\" class=\"no-js\" lang=\"fr\">\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n    <meta name=\"viewport\" content=\"width=device-width\">\n    <script type=\"text/javascript\" src=\"https://media.ouest-france.fr/v1/javascripts/d5f18db56ca69d245e25599e5786c6f9-smarttag-d5f18db56c.js\"></script>\n        <script type=\"text/javascript\">\n            ;(function(){\n                if(!window.ATInternet) return;\n                var ATTag = new ATInternet.Tracker.Tag({\n                    log: 'logc1',\n                    logSSL: 'logs4',\n                    secure: false,\n                    site: document.documentElement.clientWidth < 980 ? '212154' : '61164',\n                    domain: 'xiti.com'\n                });\n                ATTag.page.send({name: document.location.pathname});\n            })();\n        </script>\n    \n\n    <script type=\"text/ja",
+    "title": "Ouest-France : toute l'actualit\u00c3\u00a9 en direct, l'info en continu en France, dans les r\u00c3\u00a9gions et dans le monde"
+  }
+]
