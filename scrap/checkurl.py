@@ -176,7 +176,9 @@ if __name__ == "__main__":
     ]
     get_urls(listedesurls)
 
-print(len(dataset))
+dataset_api = {}
+dataset_api["count"] = len(dataset)
+dataset_api["dataset"] = dataset
 
 with open("test.json", "w+", encoding="utf8") as f:
-    json.dump(dataset, f)
+    json.dump(dataset_api, f)
