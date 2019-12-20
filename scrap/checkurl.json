@@ -1,20 +1,22 @@
-[
-  {
-    "url": "http://www.legorafi.fr/",
-    "status_code": 200,
-    "content": "\n<!doctype html>\n<html lang=\"fr-FR\" class=\"no-js\">\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<title>Le Gorafi.fr Gorafi News Network &mdash; Toute l&#039;information selon des sources contradictoires</title>\n\n\t\t<link rel=\"apple-touch-icon\" sizes=\"57x57\" href=\"http://www.legorafi.fr/wp-content/themes/legorafi/img/icons/apple-touch-icon-57x57.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"60x60\" href=\"http://www.legorafi.fr/wp-content/themes/legorafi/img/icons/apple-touch-icon-60x60.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"72x72\" href=\"http://www.legorafi.fr/wp-content/themes/legorafi/img/icons/apple-touch-icon-72x72.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"76x76\" href=\"http://www.legorafi.fr/wp-content/themes/legorafi/img/icons/apple-touch-icon-76x76.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"114x114\" href=\"http://www.legorafi.fr/wp-content/themes/legorafi/img/icons/apple-touch-icon-114x114.png\">\n\t\t<link rel=\"apple-touch-icon\" sizes=\"120x120\" href=\"http://www.legorafi.fr/wp-content/themes/",
-    "title": "Le Gorafi.fr Gorafi News Network \u2014 Toute l'information selon des sources contradictoires"
-  },
-  {
-    "url": "https://www.systemrequirementslab.com/cyri",
-    "status_code": 200,
-    "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <title>Can You RUN It | Can I Run It | Can My PC Run It</title>\r\n    <link href=\"https://s3.amazonaws.com/content.systemrequirementslab.com/www/favicon.ico\" rel=\"shortcut icon\" type=\"image/x-icon\" />\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <meta name=\"site_name\" content=\"www.systemrequirementslab.com\" />\r\n    <meta name=\"keywords\" content=\"can I run it, can you run it, game system requirements, validate computer, minimum requirements, game requirements, pc requirements, game debate, benchmark my pc\" />\r\n    <meta name=\"description\" content=\"Check your system requirements. Can I Run it? Test your specs and rate your gaming PC.\" />\r\n    <meta property=\"og:title\" content=\"Requirements Test\" />\r\n    <meta property=\"og:description\" content=\"Check your system requirements. Can I Run it? Test your specs and rate your gamimg PC.\" />\r\n    \r\n    <meta property=\"og:image\" content=\"https://s3.ama",
-    "title": "Can You RUN It | Can I Run It | Can My PC Run It"
-  },
-  {
-    "url": "https://imgur.com/",
-    "status_code": 200,
-    "content": "<!doctype html> <html lang=en> <head> <meta charset=utf-8> <meta name=viewport content=\"width=device-width,initial-scale=1\"> <title>Imgur: The magic of the Internet</title> <meta name=keywords content=\"funny, image, gif, gifs, memes, jokes, image upload, upload image, lol, humor, vote, comment, share, imgur, imgur.com, wallpaper\"/> <meta name=description content=\"Discover the magic of the internet at Imgur, a community powered entertainment destination. Lift your spirits with funny jokes, trending memes, entertaining gifs, inspiring stories, viral videos, and so much more.\"/> <meta name=copyright content=\"Copyright 2019 Imgur, Inc.\"/> <link rel=icon type=image/png href=https://s.imgur.com/images/favicon-32x32.png sizes=32x32> <link rel=icon type=image/png href=https://s.imgur.com/images/favicon-96x96.png sizes=96x96> <link rel=icon type=image/png href=https://s.imgur.com/images/favicon-16x16.png sizes=16x16> <link rel=apple-touch-icon-precomposed href=https://s.imgur.com/images/favicon",
-    "title": "Imgur: The magic of the Internet"
-  }
-]
+{
+  "nbrobjet": 3,
+  "dataset": [{
+      "status_code": 200,
+      "url": "http://www.jeuxvideo.com/",
+      "title": "JEUXVIDEO.COM - Le m\u00e9dia de r\u00e9f\u00e9rence des gamers : Jeux vid\u00e9o sur PC et Consoles",
+      "desc": "Jeuxvideo.com est le premier site d'information sur l'actualit\u00e9 du jeu vid\u00e9o. Vous voulez suivre les news, les tests, les aper\u00e7us des jeux de vos consoles favorites (PC, playstation 3 et playstation 4, xbox 360 et xbox one, Nintendo Wii U et 3DS, PSP VITA, et sur smartphone iPhone ou Android) ? Vous...",
+      "image": "//static.jvc.gg/unversioned/img/default-og.png"
+  }, {
+      "status_code": 200,
+      "url": "https://www.dealabs.com/",
+      "title": "Dealabs.com \u2013 Tous les deals, bons plans, r\u00e9ducs et codes promo",
+      "desc": "lll\u27a4 Bons plans et codes promo \u2665 Tous les deals et codes de r\u00e9duction de la communaut\u00e9 - D\u00e9nichez les meilleurs prix et \u00e9conomisez \u27a4 Dealabs.com.",
+      "image": "https://www.dealabs.com/assets/img/logo-dark_ce8b6.png"
+  }, {
+      "status_code": 200,
+      "url": "https://www.ouest-france.fr/",
+      "title": "Ouest-France : toute l'actualit\u00c3\u00a9 en direct, l'info en continu en France, dans les r\u00c3\u00a9gions et dans le monde",
+      "desc": "Une : toute l\u00e2\u0080\u0099actualit\u00c3\u00a9 en direct, soyez inform\u00c3\u00a9 de toute l\u00e2\u0080\u0099info en continu, en images et en vid\u00c3\u00a9os, dans votre r\u00c3\u00a9gion, en France et dans le monde. Partagez et commentez en temps r\u00c3\u00a9el, \u00c3\u00a0 tout moment de la journ\u00c3\u00a9e",
+      "image": "https://www.ouest-france.fr/sites/all/themes/front/images/logos/logo-of-150x150.png"
+  }]
+}

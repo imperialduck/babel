@@ -1,3 +1,12 @@
 input/__pycache__/second.cpython-38.pyc
 input2/__pycache__/year.cpython-38.pyc
 .vscode/settings.json
+babel/__pycache__/__init__.cpython-38.pyc
+babel/__pycache__/settings.cpython-38.pyc
+babel/__pycache__/urls.cpython-38.pyc
+babel/__pycache__/wsgi.cpython-38.pyc
+catalog/__pycache__/__init__.cpython-38.pyc
+catalog/__pycache__/admin.cpython-38.pyc
+catalog/__pycache__/models.cpython-38.pyc
+catalog/__pycache__/views.cpython-38.pyc
+catalog/migrations/__pycache__/__init__.cpython-38.pyc
