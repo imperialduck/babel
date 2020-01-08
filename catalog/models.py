@@ -31,22 +31,30 @@ class Author(models.Model):
 class Dewey(models.Model):
     name = models.CharField(max_length=150)
     number = models.IntegerField()
+    bg_color = models.CharField(max_length=7, default="*")
+    text_color = models.CharField(max_length=7, default="*")
+
+    class Meta:
+        ordering = ["number"]
 
     def __str__(self):
-        return f"{self.number} - {self.name}"
+        if self.number == 0:
+            return f"000 - {self.name}"
+        else:
+            return f"{self.number} - {self.name}"
 
 
 class Publication(models.Model):
     TYPE_PUBLICATION_CHOICES = [
-        ("_", "Indéfini"),
         ("B", "Livre"),
         ("M", "Musique"),
         ("F", "Film"),
+        ("_", "Autre"),
     ]
 
     name = models.CharField(max_length=61)
     reference = models.CharField(max_length=61, editable=False)
-    type_publication = models.CharField(max_length=1, choices=TYPE_PUBLICATION_CHOICES, default="_",)
+    type_publication = models.CharField(max_length=1, choices=TYPE_PUBLICATION_CHOICES, default="B",)
     genre = models.CharField(max_length=50)
 
     author = models.ForeignKey(Author, models.PROTECT, null=True)
@@ -54,6 +62,7 @@ class Publication(models.Model):
 
     date_publication = models.DateField(null=True, blank=True)
     label_editor = models.CharField(max_length=50, null=True, blank=True)
+    isbn = models.CharField(max_length=50, null=True, blank=True)
 
     nb_track_pages = models.IntegerField(null=True, blank=True)
     content = models.TextField(null=True, blank=True)
