@@ -12,6 +12,7 @@ black = "*"
 beautifulsoup4 = "*"
 lxml = "*"
 django = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.8"
