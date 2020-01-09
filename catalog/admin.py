@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.utils.translation import gettext as _
 from .models import Author, Dewey, Publication
 
 # Register your models here.
@@ -18,16 +19,17 @@ class PublicationAdmin(admin.ModelAdmin):
 
     radio_fields = {"type_publication": admin.HORIZONTAL}
     readonly_fields = ("reference",)
+    autocomplete_fields = ("author",)
 
     fieldsets = (
-        ("Référence", {
+        (_("Référence"), {
             # 'readonly_fields': ('reference'),
             'fields': (('dewey_number', 'isbn'), ('type_publication', 'reference')),
         }),
-        ("Publication", {
+        (_("Publication"), {
             'fields': ('name', 'author', 'label_editor'),
         }),
-        ("Details", {
+        (_("Détails"), {
             'classes': ('collapse',),
             'fields': (('content', 'nb_track_pages'),('image_url', 'image_file')),
         }),
@@ -38,6 +40,7 @@ class DeweyAdmin(admin.ModelAdmin):
     list_display = (
         "number",
         "name",
+        "colored_number"
     )
 
 
@@ -46,7 +49,12 @@ class AuthorAdmin(admin.ModelAdmin):
         "last_name",
         "first_name",
         "date_birth",
+        "century_birth",
     )
+
+    readonly_fields = ("century_birth"),
+    search_fields = ("last_name", "first_name",)
+    list_filter = ("century_birth", )
 
 
 admin.site.register(Author, AuthorAdmin)
