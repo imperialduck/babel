@@ -1,8 +1,6 @@
 from django.contrib import admin
 from django.utils.translation import gettext as _
-from .models import Author, Dewey, Publication
-
-# Register your models here.
+from .models import Author, Publication, Dewey, DeweyTest
 
 
 class PublicationAdmin(admin.ModelAdmin):
@@ -10,38 +8,33 @@ class PublicationAdmin(admin.ModelAdmin):
         "name",
         "reference",
         "type_publication",
-        "genre",
+        "isbn",
         "author",
         "dewey_number",
         "date_publication",
         "label_editor",
     )
 
-    radio_fields = {"type_publication": admin.HORIZONTAL}
-    readonly_fields = ("reference",)
-    autocomplete_fields = ("author",)
+    fields_reference = ("type_publication", "dewey_number", ("isbn", "reference"))
+    fields_publication = ("name", "author", "label_editor")
+    fields_detail = (
+        "date_publication",
+        "nb_tracks_pages",
+        "content",
+        "image_file",
+        "image_url",
+    )
 
     fieldsets = (
-        (_("Référence"), {
-            # 'readonly_fields': ('reference'),
-            'fields': (('dewey_number', 'isbn'), ('type_publication', 'reference')),
-        }),
-        (_("Publication"), {
-            'fields': ('name', 'author', 'label_editor'),
-        }),
-        (_("Détails"), {
-            'classes': ('collapse',),
-            'fields': (('content', 'nb_track_pages'),('image_url', 'image_file')),
-        }),
+        (_("Référence"), {"fields": fields_reference}),
+        (_("Publication"), {"fields": fields_publication}),
+        (_("Détail"), {"fields": fields_detail, "classes": ("collapse",)}),
     )
-
-
-class DeweyAdmin(admin.ModelAdmin):
-    list_display = (
-        "number",
-        "name",
-        "colored_number"
-    )
+    readonly_fields = ("reference",)
+    radio_fields = {"type_publication": admin.HORIZONTAL}
+    autocomplete_fields = ["dewey_number", "author"]
+    search_fields = ["name"]
+    list_filter = ("dewey_number__number", "author__last_name")
 
 
 class AuthorAdmin(admin.ModelAdmin):
@@ -51,12 +44,48 @@ class AuthorAdmin(admin.ModelAdmin):
         "date_birth",
         "century_birth",
     )
+    fields_identity = (
+        ("first_name", "last_name"),
+        ("date_birth", "century_birth"),
+        "place_birth",
+    )
+    fields_death = (("date_died", "place_died"),)
+    fields_detail = (
+        "content",
+        "image_file",
+        "image_url",
+    )
 
-    readonly_fields = ("century_birth"),
-    search_fields = ("last_name", "first_name",)
-    list_filter = ("century_birth", )
+    fieldsets = (
+        (_("Identité"), {"fields": fields_identity}),
+        (_("Détail"), {"fields": fields_detail, "classes": ("collapse",)}),
+        (_("Contemporain ?"), {"fields": fields_death, "classes": ("collapse",)}),
+    )
+    readonly_fields = ("century_birth",)
+    search_fields = (
+        "last_name",
+        "first_name",
+        "age",
+    )
+    list_filter = ("century_birth",)
+
+
+class DeweyAdmin(admin.ModelAdmin):
+    list_display = (
+        "number",
+        "name",
+    )
+    search_fields = (
+        "number",
+        "name",
+    )
+
+
+class DeweyTestAdmin(DeweyAdmin):
+    pass
 
 
 admin.site.register(Author, AuthorAdmin)
-admin.site.register(Dewey, DeweyAdmin)
 admin.site.register(Publication, PublicationAdmin)
+admin.site.register(Dewey, DeweyAdmin)
+admin.site.register(DeweyTest, DeweyTestAdmin)
